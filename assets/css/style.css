@@ -1,0 +1,453 @@
+/*
+Template Name: Villa Bernstein
+Template URI: 
+Author Name: vismo_dev
+Author URI: https://
+Version: 1.0.0
+Description: This is html
+Tags: html,css,js,bootstrap
+*/
+
+/* Google Fonts 
+**********************************/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* titles 
+**********************************/
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin: 0;
+    padding: 0;
+}
+h1, .h1 {
+    color: var(--Wei, #FFF);
+    font-size: 40px;
+    line-height: normal;
+    display: table;
+    padding: 8px 8px 0 8px;
+    background: var(--Grau, #333);
+}
+h2, .h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 26.5px;
+    padding: 10px;
+    display: inline-block;
+    background: #FFFFFF;
+    color: var(--Grau, #333);
+}
+h3, .h3{color: var(--Wei, #FFF);
+    font-size: 28px;
+    font-weight: 300;
+    line-height: normal;
+    background: var(--Grau, #333);
+    display: table;
+    padding: 8px 8px 0 8px;
+    margin: 8px 0 16px 0;
+}
+h4, .h4{
+    color: var(--Wei, #FFF);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26.5px;
+}
+p{
+    color: var(--Wei, #FFF);
+    font-weight: 400;
+    line-height: 28px;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.btn1{
+    display: inline-block;
+    padding: 10px 16px;
+    color: var(--Grau, #333);
+    line-height: 22px;
+    background: var(--Gold, #FCB500);
+    transition: 0.4s;
+}
+.btn1:hover{
+    color: #000000;
+    background: var(--Gold, #cc9200);
+}
+.btn2{
+    padding: 10px 16px;
+    display: inline-block;
+    color: var(--default-white, var(--Wei, #FFF));
+    background: #333;
+    font-weight: 300;
+    line-height: 22px;
+    transition: 0.8s;
+}
+.btn2:hover{
+    color: var(--Grau, #333);
+    background: var(--Gold, #FCB500);
+}
+.container-fluid{
+    max-width: 1590px;
+    margin: auto;
+}
+/* start Main Navbar Area css 
+**********************************/
+.main_navbar_area{
+    background: url(../images/banner.png) no-repeat scroll center center / cover;
+    object-fit: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.header-title {
+    padding: 4px 0;
+    background: #222222e3;
+}
+.fixedHeader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+.main-header-area{
+    padding: 15px 0;
+    background: rgb(239, 237, 237);
+}
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo a{
+    display: inline-block;
+}
+.header-logo img{
+    width: 50px;
+    margin: auto;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu nav ul{
+    display: flex;
+    align-items: center;
+}
+.menu nav ul li a{
+    font-weight: 300;
+    color: rgb(255 255 255 / 55%);
+}
+.menu nav ul li a:hover{
+    color: var(--Gold, #FCB500);
+}
+.menu-bar{
+    display: none;
+}
+.nav_ml{
+    margin-right: 110px;
+}
+.banner_bottom{
+    column-gap: 40px;
+    padding-bottom: 10px;
+}
+
+/* Start Villa Bernstein Area css 
+**********************************/
+.villa_bernstein_area{
+    padding: 110px 0 52px 0;
+    background: #333333;
+}
+.villa_mid_item {
+    text-align: center;
+    margin-bottom: -220px;
+}
+.villa_objects img{
+    max-width: 394px;
+    margin: auto;
+}
+.villa_bernstein_contain{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.villa_bernstein_left{
+    display: flex;
+    justify-content: space-between;
+}
+.villa_left_img img{
+    width: 210px;
+}
+.villa_text_p{
+    max-width: 500px;
+    margin-top: 236px;
+}
+.villa_text_p span{
+    color: var(--Gold, #FCB500);
+    font-size: 32px;
+    line-height: 28px;
+}
+.villa_bernstein_right{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* start gallary area css 
+**********************************/
+.gallary_area{
+    position: relative;
+}
+.gallary_item{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gallary_img img{
+    max-width: 100%;
+}
+.gallary_img{
+    position: relative;
+    overflow: hidden;
+}
+.gallary_con{
+    position: absolute;
+    bottom: -36px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: calc(100% - 73px);
+    height: auto;
+    transition: 350ms ease;
+    z-index: 1;
+}
+.gallary_img:hover .gallary_con{
+    bottom: 0;
+}
+.gallary_con::after {
+    content: "";
+    position: absolute;
+    left: 29px;
+    bottom: -185px;
+    width: 100%;
+    height: 470px;
+    border-radius: 564px;
+    background: radial-gradient(56.58% 56.58% at 43.1% 70.66%, rgb(223, 163, 52) 0%, rgba(217, 217, 217, 0) 100%);
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 350ms ease 0s;
+    transform: scale(0);
+}
+.gallary_img:hover .gallary_con::after{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.gallary_con h3{
+    margin: 0px;
+}
+.gallary_con p{
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 4px 8px;
+    display: inline-block;
+    background: var(--Grau, #333);
+}
+
+/* Start Es Ist Area css 
+**********************************/
+.es_ist_area{
+    background: var(--Grau, #333);
+}
+.es_mt{
+    margin-top: 69px;
+}
+.es_ist_text{
+    margin-top: 31px;
+    line-height: 20px;
+}
+.line_h{
+    line-height: 20px;
+}
+.es_img {
+    width: 400px;
+    margin-left: -90px;
+}
+
+/* Start Folgende Card Area css 
+**********************************/
+.folgende_card_area{
+    padding: 22px 0 31px 0;
+}
+.folgende_card_contain h2{
+    color: var(--Wei, #FFF);
+    background: var(--Grau, #333);
+    margin-bottom: 31px;
+}
+.main_folgende_card{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.single_folgende_card{
+    max-width: 340px;
+}
+.folgende_card_after,
+.folgende_card_befor{
+    position: relative;
+}
+.folgende_card_befor::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -262px;
+    width: 260px;
+    height: 258px;
+    background: url(../images/Element_2.png) no-repeat scroll center center / cover;
+}
+.folgende_card_after::after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    right: -283px;
+    width: 243px;
+    height: 148px;
+    background: url(../images/Element_1.png) no-repeat scroll center center / cover;
+    z-index: -1;
+}
+.folgende_item{
+    padding: 16px;
+    text-align: center;
+    background: var(--Grau, #333);
+}
+.folgende_item img{
+    margin: 8px 0;
+    max-width: 123px;
+}
+.folgende_item p{
+    color: var(--Wei, #FFF);
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20.8px;
+}
+
+/* Start Kontakt Area css 
+**********************************/
+.kontakt_area{
+    padding: 115px 0 46px 0;
+    background: var(--Grau, #333);
+}
+.Kontakt_b{
+    margin-bottom: 16px;
+    padding: 8px;
+    display: inline-block;
+    color: var(--Grau, #333);
+    background: var(--Wei, #FFF);
+}
+.kontakt_top{
+    display: flex;
+    justify-content: space-between;
+}
+.kontakt_img img{
+    max-width: 150px;
+    margin-top: 58px;
+}
+.map_area iframe{
+    width:674px;
+    height: 413px;
+}
+.Anmeldeformular_area{
+    margin-top: 75px;
+}
+.Anmeldeformular_left{
+    max-width: 523px;
+}
+.box_1 select.form-select,
+.box_1 input.form-control,
+.box_1 textarea.form-control {
+    border: none;
+    border-radius: 0;
+    outline: oldlace;
+    padding: 10px 18px;
+    color: #B1B1B1;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26.5px;
+}
+.Anmeldeformular_right img{
+    max-width: 213px;
+}
+.anmel_item{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Start Footer Area css 
+**********************************/
+.footer_area{
+    padding: 28px;
+    background: #ffffff;
+}
+.fotter_contain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fotter_contain ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 110px;
+}
+.fotter_contain ul li a{
+    color: var(--Grau, #333);
+    text-align: center;
+    line-height: normal;
+    transition: 0.5s;
+}
+.fotter_contain ul li a:hover{
+    color: var(--Gold, #FCB500);
+}
+.fotter_contain p{
+    color: var(--Grau, #333);
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 0;
+}
+/* end Footer Area css 
+**********************************/

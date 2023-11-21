@@ -1,0 +1,309 @@
+@media all and (max-width: 1440px){
+    .container-fluid{
+        max-width: 1270px;
+        padding: 0 15px;
+    }
+    .villa_box1 {
+        column-gap: 30px;
+    }
+    .folgende_card_befor::before {
+        right: -172px;
+    }
+    .folgende_card_after::after {
+        right: -240px;
+    }
+    .map_area iframe {
+        width: 500px;
+        height: 397px;
+    }
+}
+@media all and (max-width: 1200px){
+    .fotter_contain ul{
+        column-gap: 60px;
+    }
+    .map_area iframe {
+        width: 430px;
+        height: 370px;
+    }
+    .villa_mid_item {
+        margin-bottom: -179px;
+    }
+}
+
+@media all and (max-width: 991px){
+    h1, .h1 {
+        font-size: 36px;
+    }
+    h3, .h3 {
+        font-size: 24px;
+    }
+    h2, .h2 {
+        font-size: 27px;
+    }
+    .main_folgende_card {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .folgende_card_befor::before {
+        display: none;
+    }
+    .folgende_card_after::after {
+        display: none;
+    }
+    .fotter_contain {
+        justify-content: space-between;
+    }
+    .fotter_contain ul {
+        column-gap: 25px;
+        flex-wrap: wrap;
+    }
+    .villa_bernstein_contain {
+        flex-direction: column;
+        align-items: center;
+    }
+    .villa_mid_item {
+        margin-bottom: -53px;
+    }
+    .villa_text_p {
+        max-width: 655px;
+        margin-top: 120px;
+    }
+    .villa_left_img img {
+        width: 170px;
+    }
+    .villa_objects img {
+        max-width: 300px;
+    }
+    .anmel_item {
+        justify-content: center;
+    }
+    .kontakt_img{
+        display: none;
+    }
+    .map_area iframe {
+        width: 100%;
+        height: 411px;
+    }
+    .kontakt_right {
+        margin-top: 54px;
+    }
+    .kontakt_left {
+        max-width: 785px;
+        margin: auto;
+    }
+    .gallary_item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media all and (min-width: 768px){
+    .menu {
+       display: flex !important;
+    }
+    .menu nav ul {
+       display: flex !important;
+    }
+}
+@media all and (max-width: 767px){
+    /* start menu */
+    .header-title{
+        position: relative;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        background: #222222e3;
+        width: 100%;
+        height: auto;
+        top: 64px;
+        left: 0;
+        padding: 30px;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        z-index: 9999;
+    }
+    .menu nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu .login{
+        margin-left: 0;
+    }
+    .menu .login::before{
+        content: '';
+        position: inherit;
+    }
+    .login{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .login .btn1{
+        max-width: 120px;
+        width: 100%;
+        margin: auto;
+    }
+    /*Start Mobile Menu icon*/
+   .menu-bar{
+        display: block;
+    }
+    #toggleNav-icon{
+        width: 28px;
+        height: 23px;
+        position: relative;
+        margin: 0px;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        top: 30%;
+        right: 0;
+    }
+    #toggleNav-icon span{
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 0px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+    #toggleNav-icon span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+             -ms-transform-origin: left center;
+                 transform-origin: left center;
+    }
+    #toggleNav-icon span:nth-child(2) {
+        top: 8px;
+        -webkit-transform-origin: left center;
+            -ms-transform-origin: left center;
+                transform-origin: left center;
+    }
+    #toggleNav-icon span:nth-child(3) {
+        top: 16px;
+        -webkit-transform-origin: left center;
+            -ms-transform-origin: left center;
+                transform-origin: left center;
+    }
+    #toggleNav-icon.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+        top: -2px;
+        left: 2px;
+    }
+    #toggleNav-icon.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+    #toggleNav-icon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        top: 18px;
+        left: 2px;
+    }
+    /*End Mobile Menu icon*/
+
+    h1, .h1 {
+        font-size: 32px;
+    }
+    h2, .h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .nav_ml{
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .banner_bottom {
+        column-gap: 24px;
+    }
+    .main_folgende_card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .es_img {
+        margin-left: 0px;
+    }
+    .fotter_contain {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .Anmeldeformular_right {
+        display: none;
+    }
+    .Anmeldeformular_left {
+        max-width: 600px;
+        margin: auto;
+    }
+    .kontakt_area {
+        padding: 75px 0 46px 0;
+    }
+    .gallary_item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media all and (max-width: 576px){
+    .villa_text_p {
+        margin-top: 95px;
+    }
+    .villa_mid_item {
+        margin-bottom: 0;
+    }
+    .villa_bernstein_area {
+        padding: 70px 0 52px 0;
+    }
+    .villa_left_img img {
+        width: 146px;
+    }
+    .villa_objects img {
+        max-width: 200px;
+    }
+    .kontakt_top {
+        flex-direction: column;
+    }
+    .single_ktontakt_right {
+        margin-top: 24px;
+    }
+}
+@media all and (max-width: 450px){
+    h1, .h1 {
+        font-size: 28px;
+    }
+    h2, .h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    h3, .h3 {
+        font-size: 20px;
+    }
+    h4, .h4 {
+        font-size: 22px;
+    }
+    .banner_bottom {
+        column-gap: 16px;
+    }
+    .es_img {
+        max-width: 300px;
+    }
+    .villa_text_p {
+        margin-top: 25px;
+    }
+    .villa_bernstein_left {
+        margin: 20px 0;
+    }
+    .box_1 select.form-select, .box_1 input.form-control, .box_1 textarea.form-control {
+        padding: 6px 18px;
+    }
+}
